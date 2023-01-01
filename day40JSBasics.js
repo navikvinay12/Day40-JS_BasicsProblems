@@ -76,6 +76,3 @@ if(coinFlipped==0)
 console.log("Heads")
 else
 console.log("Tails")
-
-
-
