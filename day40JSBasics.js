@@ -36,10 +36,9 @@ console.log("Plot of 60 feet * 40 feet is:"+ Plot+" meters");
 var TwentyFivePlots = Plot*25;
 var inAcres = TwentyFivePlots/4047;
 console.log("Area of 25 Plots in acres :"+ inAcres);
-*/
 
-//-----if else Selection Practice Problems------------
 
+//-----if else Selection Practice Problems--------------------------------------------
 //Program that reads 5 Random 3 digit values and then outputs the min and max value .
 const num1 = Math.floor((Math.random()*(900)+100));
 const num2 = Math.floor((Math.random()*(900)+100));
@@ -76,3 +75,77 @@ if(coinFlipped==0)
 console.log("Heads")
 else
 console.log("Tails")
+*/
+//if elseif and else Selection Practice problem ---------------------------------
+//Read a single digit number and write the number in word
+var noInput =prompt("enter any single digit number .");
+var no=parseInt(noInput);
+if (no==0)
+	console.log("ZERO");
+else if(no==1)
+    console.log("ONE");
+else if(no==2)
+    console.log("TWO");
+else if(no==3)
+    console.log("THREE");
+else if(no==4)
+    console.log("FOUR");
+else if(no==5)
+    console.log("FIVE");
+else if(no==6)
+    console.log("SIX");
+else if(no==7)
+    console.log("SEVEN");
+else if(no==8)
+    console.log("EIGHT");
+else
+    console.log("NINE");
+
+//Read a Number and Display the week day (Sunday, Monday,...)
+var noInput =prompt("Enter any single digit number from 1 to 7 to get the weekday");
+var no=parseInt(noInput);
+if(no==1)
+    console.log("SUNDAY");
+else if(no==2)
+    console.log("MONDAY");
+else if(no==3)
+    console.log("TUESDAY");
+else if(no==4)
+    console.log("WEDNESDAY");
+else if(no==5)
+    console.log("THURSDAY");
+else if(no==6)
+    console.log("FRIDAY");
+else if(no==7)
+    console.log("SATURDAY");
+else
+    console.log("Invalid Number entered!");
+
+//Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,...
+var noInput =prompt("Enter any number like 10,100,1000...100000000(till 8 zeroe's only)");
+var no=parseInt(noInput);
+if(no==1)
+    console.log("UNIT");
+else if(no==10)
+    console.log("TEN");
+else if(no==100)
+    console.log("HUNDRED");
+else if(no==1000)
+    console.log("THOUSAND");
+else if(no==10000)
+    console.log("TEN THOUSANDs");
+else if(no==100000)
+    console.log("LAKH");
+else if(no==1000000)
+    console.log("TEN LAKHs");
+else if(no==10000000)
+    console.log("CRORE");
+else if(no==100000000)
+    console.log("TEN CROREs");
+else
+    console.log("Please enter only in the format 1,10,100...till 100000000 i.e 8 zeroes>");
+
+
+
+
+
