@@ -389,6 +389,81 @@ if (num!=1)
 {
     console.log(num);
 }
+
 //_______________________________________________________________________________________________________
+//--###Repetition Practice Problems with while loop--------------------------
+//Q1)Write a program that takes a command-line argument n and prints a table of the powers of 2 that are less than or equal to 2^n till 256 is reached..
+// var inputN =prompt("enter the power number of base 2 (Note:We accept value till 8 only . ");
+// var N=parseInt(inputN);
+// if(N<=8)
+// {
+//     for(let i=0;i<=N;i++)
+//     {
+//         const power=Math.pow(2,i)
+//         console.log(`2^${i}=${power}`);
+//     }
+// }
+// else
+// {
+//     console.log('Please enter below 8 only');
+// }
+//---------------
+//Find the magic number.
+//a)Ask the user to think of a number between 1 to 100.
+//b)Then check with the user if the number is less then n/2 or greater
+//c)Repeat till the Magic Number is reached .
+// function findMagicNumber() 
+// {
+//     const n = parseInt(prompt('Think of a number n between 1 and 100'));
+//     let low = 1;
+//     let high = 100;
+//     while (low < high) {
+//         const mid = Math.floor((low + high) / 2);
+//         const response = prompt(`Is the magic number less than or equal to ${mid}? (yes/no)`);
+//         if (response === 'yes') {
+//         high = mid;
+//         } else {
+//         low = mid + 1;
+//         }
+//     }
+//     alert(`The magic number is ${low}`);
+// }  
+// findMagicNumber();
+
+//--------------
+//Extend the Flip Coin problem till either Heads or Tails wins 11 times.
+// function flipCoin() 
+// {
+//     let headsCount = 0;
+//     let tailsCount = 0;
+//     while (headsCount < 11 && tailsCount < 11) 
+//     {
+//         const flip = Math.random(); //0 to 0.9
+//         if (flip < 0.5) 
+//         {
+//             headsCount++;
+//             console.log(`Heads: ${headsCount}`);
+//         } 
+//         else 
+//         {
+//             tailsCount++;
+//             console.log(`Tails: ${tailsCount}`);
+//         }
+//     }
+//     if(headsCount==11)
+//     {
+//         console.log('Heads won!');
+//     }
+//     else
+//     {
+//         console.log('Tails won!');
+//     }
+// }
+// flipCoin();
+//---------------------------------------------
+//Q4)Write a Program where a gambler starts with Rs 100 and places Re 1 bet until he/she goes broke
+ //i.e. no more money to gamble or reaches the goal of Rs 200.
+ //Keeps track of number of times won and number of bets made.
 */
+
 
