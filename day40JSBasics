@@ -230,7 +230,7 @@ switch (no)
 {
     case 1:
         console.log("UNIT");
-    break;
+        break;
     case 10:
         console.log('TEN');
         break;
@@ -258,6 +258,7 @@ switch (no)
     default:
         console.log("Please enter only in the format 1,10,100...till 100000000 i.e 8 zeroes>");
         break;
+}
 //---------------------------
 // Q4)Unit Conversion of different length units .
 console.log('enter 1 for feet to inch');
@@ -296,4 +297,5 @@ switch(option) {
         console.log('Invalid option');
         break;
 }
-}*/
+*/
+//_______________________________________________________________________________
