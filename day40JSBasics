@@ -297,5 +297,98 @@ switch(option) {
         console.log('Invalid option');
         break;
 }
-*/
+
 //_______________________________________________________________________________
+//###Repetition Practice Problems with for loop
+//Q1)Write a program that takes a command-line argument n and prints a table of the powers of 2 that are less than or equal to 2^n.
+let num=2;
+for(i=1;i<=10;i++)
+{
+    console.log(""+num+"*"+i+"="+num*i);
+}
+//-----------------------
+//Q2)Write a program that takes a command-line argument n and prints the nth harmonic number.
+let N=10;//nth harmonic number
+let harmonicNumberTotal=0;//total sum
+for(i=1;i<N;i++)
+{
+   harmonicNumberTotal=harmonicNumberTotal+(1/i);
+}
+console.log(harmonicNumberTotal);
+//------------------------
+//Q3)Write a program that takes a input and determines if the number is a prime.
+function isPrime(num) 
+{
+    if (num < 2) 
+    {
+        return false;
+    }
+    for (let i = 2; i < num; i++) 
+    {
+      if (num % i === 0)
+      {
+        return false;
+      } 
+    }
+    return true;
+}
+console.log(isPrime(3));
+
+//-----------------------------
+//Q4)Extend the program to take a range of number as input and output the Prime Numbers in that range.
+function findPrimes(start, end) 
+{
+    const primes = [];
+    for (let i = start; i <= end; i++) 
+    {
+      if (isPrime(i)) 
+      {
+        primes.push(i);
+      }
+    }
+    return primes;
+}
+function isPrime(num) 
+{
+    if (num < 2) 
+    {
+        return false;
+    }
+    for (let i = 2; i < num; i++) 
+    {
+        if (num % i === 0)
+        {
+            return false;
+        } 
+    }   
+    return true;
+}
+console.log(findPrimes(1, 10));  // [2, 3, 5, 7]
+console.log(findPrimes(20, 30));  // [23, 29]
+//-------------------------------------------------
+//Q5)Write a program that computes a factorial of a number taken as input.
+let number=4;let fact=1;
+for(let i=1;i<=number;i++)
+{      
+    fact=fact*i;      
+}      
+console.log("factorial of "+number+ "is:"+fact);
+
+//-----------------------------------------------
+//Q6)Write a program to compute Factors of a number N using prime factorization method.
+let num=46;
+for (let i=2; i*i<=num; i++)
+{
+    while (num % i == 0)
+    {
+        num = num / i;
+        console.log(i + " ");
+    }
+}
+if (num!=1)
+{
+    console.log(num);
+}
+//_______________________________________________________________________________________________________
+*/
+
