@@ -64,6 +64,7 @@ console.log("False")
 //Leap year or not .
 var yearInput =prompt("Enter day number");
 var year=parseInt(yearInput);
+var year=parseInt(yearInput);
 if(year%4==0)
 console.log("Leap year")
 else
@@ -75,9 +76,9 @@ if(coinFlipped==0)
 console.log("Heads")
 else
 console.log("Tails")
-*/
-//if elseif and else Selection Practice problem ---------------------------------
-//Read a single digit number and write the number in word
+
+//#if else if and else Selection Practice problem ---------------------------------
+//Q1)Read a single digit number and write the number in word
 var noInput =prompt("enter any single digit number .");
 var no=parseInt(noInput);
 if (no==0)
@@ -101,7 +102,7 @@ else if(no==8)
 else
     console.log("NINE");
 
-//Read a Number and Display the week day (Sunday, Monday,...)
+//Q2)Read a Number and Display the week day (Sunday, Monday,...)
 var noInput =prompt("Enter any single digit number from 1 to 7 to get the weekday");
 var no=parseInt(noInput);
 if(no==1)
@@ -121,7 +122,7 @@ else if(no==7)
 else
     console.log("Invalid Number entered!");
 
-//Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,...
+//Q3)Read a Number 1, 10, 100, 1000, etc and display unit, ten, hundred,...
 var noInput =prompt("Enter any number like 10,100,1000...100000000(till 8 zeroe's only)");
 var no=parseInt(noInput);
 if(no==1)
@@ -145,7 +146,13 @@ else if(no==100000000)
 else
     console.log("Please enter only in the format 1,10,100...till 100000000 i.e 8 zeroes>");
 
-
-
-
-
+//Q4)Enter 3 Numbers do following arithmetic operation and find the one that is maximum and minimum
+let a=10,b=2,c=1;
+let firstOutput=a+b*c;  //12  ~10+2*1
+let secondOutput=a%b+c;     //1     ~10%2+1
+let thirdOutput=c+a/b;      //6     ~1+10/2
+let fourthOutput=a*b+c;     //21        ~10*2+1
+console.log(`firstOutput:${firstOutput},secondOutput:${secondOutput},thirdOutput${thirdOutput},fourthOutput:${fourthOutput}`)
+console.log("Maximum :"+Math.max(firstOutput,secondOutput,thirdOutput,fourthOutput))
+console.log("Minimum :"+Math.min(firstOutput,secondOutput,thirdOutput,fourthOutput))
+*/
